@@ -1,0 +1,48 @@
+.grad {
+  /* background: linear-gradient(white, #343a40); */
+  background: white;
+  /* -webkit-box-shadow: inset 0 0 40px 20px #343a40;
+  box-shadow: inset 0 0 40px 20px #343a40; */
+  -webkit-box-shadow: inset 0 0 40px 20px #5982aa;
+  box-shadow: inset 0 0 90px 20px #5982aa;
+}
+.card {
+  border: 2px solid #343a40;
+  border-radius: 15px;
+}
+
+a.left {
+  position: relative;
+}
+
+a.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #9fbad4;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+a.left:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #343a40;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background:#343a40;
+  border-radius: 10px;
+}
